@@ -1,6 +1,9 @@
 import { titles } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", function(){
+
+
+    
     gsap.registerPlugin(CustomEase); 
 CustomEase.create(
     "hop", 

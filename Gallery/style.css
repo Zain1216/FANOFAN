@@ -189,3 +189,20 @@ img {
     .letter span {
         font-size: 100px;
     }}
+
+
+    @media (max-width: 768px) {
+        .slide-title {
+          font-size: 16px; /* smaller font-size for mobile */
+        }
+      
+        .slide-title-row {
+          display: flex;
+          justify-content: center; /* centers the text */
+        }
+      
+        .letter {
+          margin: 0 2px; /* reduce margin between letters */
+        }
+      }
+      
