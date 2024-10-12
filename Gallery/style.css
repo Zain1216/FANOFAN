@@ -28,29 +28,8 @@ nav, footer {
     z-index: 2;
 }
 
-nav {
-    top: 0;
-}
 
-footer {
-    bottom: 0;
-}
 
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-    color: #000;
-}
-
-nav a#logo {
-    font-family: "TIMMONSNY-Regular", sans-serif !important;
-    position: relative;
-    top: -12px;
-    font-family: sans-serif;
-    font-size: 42px;
-}
 
 .bg-overlay { 
     position: fixed;
@@ -77,7 +56,9 @@ nav a#logo {
 
 .nav-item-wrapper {
     flex: 1;
-    height: 100%;
+
+
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,9 +66,9 @@ nav a#logo {
 }
 
 .nav-item {
-width: 3px;
+width: 6px;
 height: 100%;
-border: 1px solid rgba(0, 0, 0, 0.15);
+border: 3px solid rgba(0, 0, 0, 0.15);
 transition: all 750ms cubic-bezier(0, 0.75, 0.5, 1);
 }
 
@@ -105,7 +86,7 @@ flex: 1;
     top: 0;
     left: 0;
     width: 3000vw;
-    height: 100vh;
+    height: 10vh;
     display: flex;
 }
 
@@ -119,8 +100,8 @@ flex: 1;
 }
 
 .slide .img {
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     opacity: 0.75;
 }
 
@@ -146,6 +127,7 @@ img {
     flex: 1;
     width: 100%;
     display: flex;
+    /* margin-top: -50px; */
 }
 
 .slide-title-row:nth-child(2) {
@@ -164,9 +146,10 @@ img {
     position: relative;
     display: inline-block;
     font-family: sans-serif;
-    font-size: 280px;
+    font-size: 180px;
     filter: brightness(0.25) saturate(0.75);
 }
+
 
 @media(max-width: 900px) {
     .slider-nav {
@@ -191,14 +174,13 @@ img {
     }}
 
 
-    @media (max-width: 768px) {
-        .slide-title {
-          font-size: 16px; /* smaller font-size for mobile */
-        }
-      
+    @media (max-width: 600px) {
+        
         .slide-title-row {
+            /* margin-top: -50px; */
           display: flex;
-          justify-content: center; /* centers the text */
+          justify-content:center; 
+          /* font-size: 0; */
         }
       
         .letter {
@@ -207,7 +189,10 @@ img {
 
         .slide .img {
             width: 350px;
-            height: 250px;
+            height: 270px;
         }
-      }
-      
+
+        .letter span {
+            font-size: 70px;
+
+      }}
