@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FANOFAN</title>
+  <link rel="icon" type="image/x-icon"  href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- --------------------------------navbar--------------------------------------- -->
+  <section>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="logo" src="LOGO1.png" alt="LOGO">
+      <h2 class="navbar-brand"> FANOFAN</h2>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul id="buttons" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <h4>Home</h4>
+            </a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link" href="#" id="productDropdown nav button">
+             <h4>Product</h4>
+            </a>
+            <ul class="dropdown-menu" id="productMenu">
+              <li><a class="dropdown-item " href="Product/CEILING FAN/index.html"><h4>Ceiling Fan</h4></a></li>
+              <li><a class="dropdown-item" href="Product/EXHAUST fAN/index.html"><h4>Exhaust Fan</h4></a></li>
+              <li><a class="dropdown-item" href="Product/TABLE FAN/index.html"><h4>Table Fan</h4></a></li>
+              <li><a class="dropdown-item" href="Product/STAND FAN/index.html"><h4>Stand Fan</h4></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery/Index.html">
+              <h4>Gallery</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact Us/index.html">
+              <h4>Contact</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us/index.html">
+              <h4>About Us</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  
+
+<!-- ----------carousel---------------- -->
+  
+  <div class="carousel">
+
+    <div class="list">
+
+        <div class="item" style="background-image: url(img/headerimg/stand\ Fan.jpeg);">
+            <div class="content">
+                <div class="title">Stand</div>
+                <div class="name">Fans</div>
+                <div class="des">Stand fans are tall, slender fans designed to save space while providing effective
+                    cooling and air circulation. These fans are typically designed with a vertical column structure,
+                    housing multiple small blades or impellers that generate airflow across a wide area.</div>
+                <div class="btn">
+                    <button>See More</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="item" style="background-image: url(img/headerimg/Ceiling\ Fan.jpg);">
+
+            <div class="content">
+                <div class="title">Ceiling</div>
+                <div class="name">Fans</div>
+                <div class="des">Ceiling fans are mechanical devices mounted to the ceiling that help circulate air
+                    throughout a room. They consist of rotating blades that, when in motion, create a breeze that
+                    helps cool down a space by enhancing air movement. </div>
+                <div class="btn">
+                    <button>See More</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="item" style="background-image: url(img/headerimg/Table\ Fan.jpg);">
+
+            <div class="content">
+                <div class="title">Table</div>
+                <div class="name">Fans</div>
+                <div class="des">Table fans are small, portable fans designed to be placed on a table, countertop,
+                    or floor. They consist of rotating blades that generate airflow, providing focused and direct
+                    cooling to a specific area or individual. </div>
+                <div class="btn">
+                    <button>See More</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item" style="background-image: url(img/headerimg/Exhaust\ Fan.jpeg);">
+
+            <div class="content">
+                <div class="title">Exhaust</div>
+                <div class="name">Fans</div>
+                <div class="des">Exhaust fans are ventilation devices installed in spaces like kitchens, bathrooms,
+                    basements, or laundry rooms, designed to expel air from a specific area to the outside
+                    environment. </div>
+                <div class="btn">
+                    <button>See More</button>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--next prev button-->
+    <div class="arrows">
+        <button class="prev">
+            < </button>
+                <button class="next"> > </button>
+    </div>
+
+
+    <!-- time running -->
+    <div class="timeRunning"></div>
+
+</div>
+
+
+
+
+  <!--  features -->
+
+        <section class="features-area section_gap">
+       <div class="container">
+      <div class="row features-inner">
+        <!-- single features -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-features">
+            <div class="f-icon">
+              <img src="img/features/f-icon1.png" alt="">
+            </div>
+            <h6>Free Delivery</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+        <!-- single features -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-features">
+            <div class="f-icon">
+              <img src="img/features/f-icon2.png" alt="">
+            </div>
+            <h6>Return Policy</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+        <!-- single features -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-features">
+            <div class="f-icon">
+              <img src="img/features/f-icon3.png" alt="">
+            </div>
+            <h6>24/7 Support</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+        <!-- single features -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-features">
+            <div class="f-icon">
+              <img src="img/features/f-icon4.png" alt="">
+            </div>
+            <h6>Secure Payment</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end features Area -->
+</div>
+
+
+  <div class="page3">
+    <div class="container">
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img/card/Ceiling Fan.jpeg" alt="Ceiling Fan">
+        </div>
+        <div class="product-info">
+          <h2>Ceiling Fan</h2>
+          <p>Ceiling fans are mechanical devices mounted to the ceiling that help circulate air
+            throughout a room. They consist of rotating blades that, when in motion, create a breeze that
+            helps cool down a space by enhancing air movement.</p>
+          <div class="price-order">
+            <span class="price">$38</span>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img/card/Table Fan.jpeg" alt="Ceiling Fan">
+        </div>
+        <div class="product-info">
+          <h2>Table Fan</h2>
+          <p>Table fans are small, portable fans designed to be placed on a table, countertop,
+            or floor. They consist of rotating blades that generate airflow, providing focused and direct
+            cooling to a specific area or individual.</p>
+          <div class="price-order">
+            <span class="price">$18</span>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img/card/Exhaust Fan.jpeg" alt="Ceiling Fan">
+        </div>
+        <div class="product-info">
+          <h2>Exhaust Fan</h2>
+          <p>Exhaust fans are ventilation devices installed in spaces like kitchens, bathrooms,
+            basements, or laundry rooms, designed to expel air from a specific area to the outside
+            environment.They consist of rotating </p>
+          <div class="price-order">
+            <span class="price">$8</span>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="image-container">
+          <img src="img/card/Stand Fan.jpeg" alt="Ceiling Fan">
+        </div>
+        <div class="product-info">
+          <h2>Stand Fan</h2>
+          <p>Stand fans are tall, slender designed save space providing effective cooling and air circulation. These fans are typically designed with vertical column structure, housing multiple small blades or generate airflow </p>
+          <div class="price-order">
+            <span class="price">$28</span>
+            <button class="order-button">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- --------------footor---------------- -->
+
+    <footer>
+      
+
+        <div class="container">
+          <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>Fanofan is a fashion and lifestyle brand that aims to elevate your personality with unique and stylish
+              products. We blend the latest trends with our own creativity, ensuring that everyone can express their style
+              in a distinctive way.</p>
+            <ul class="sci">
+              <li><a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="sec quicklinks">
+            <h2>Support</h2>
+              <ul>
+                <li><a href="tel:+12345678900">FAQ</a></li>
+                <li><a href="Document.pdf" target="_blank">Privacy Policy</a></li>
+                <li><a href="tel:+12345678900">Help</a></li>
+                <li><a href="tel:+12345678900">Contact</a></li>
+              </ul>
+          </div>
+          <div class="sec quicklinks">
+            <h2>Shop</h2>
+            <ul>
+              <li><a href="Product/CEILING FAN/index.html">Ceiling fan</a></li>
+              <li><a href="Product/EXHAUST fAN/index.html">Exhaust fan</a></li>
+              <li><a href="Product/TABLE FAN/index.html">Table fan</a></li>
+              <li><a href="Product/STAND FAN/index.html">Stand fan</a></li>
+            </ul>
+          </div>
+          <div class="sec contact">
+            <h2>Contact Us</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p><a href="tel:+12345678900">+1 234 567 8900</a></p>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p><a href="mailto:www.fanofan@gmail.com">www.fanofan@gmail.com</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyrightText">
+          <p>Fanofan is a dynamic fashion and lifestyle brand that caters to individuals who want to express their unique
+            personalities through bold and stylish clothing and accessories. With a focus on merging current trends with
+            originality, Fanofan offers a range of products that are modern yet timeless, allowing customers to stand out
+            while staying comfortable </p>
+            <p class="copyrightTitle">  <copyright>© 2024 ZDUS Data as. All rights reserved.</copyright>
+              <b>(C)</b> 2024</p>
+          </div>
+        </footer>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-qPao6V0P+GuoB0l8EQICe/7HXfEyJMi+4yIcUOOUzSzMLg5WJ76HRB4OXx93Qg9g"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
