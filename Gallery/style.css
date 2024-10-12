@@ -169,9 +169,10 @@ img {
         left: 0;
     }
 
-    .letter span {
+    /* .letter span {
         font-size: 100px;
-    }}
+    } */
+}
 
 
     @media (max-width: 600px) {
@@ -193,6 +194,7 @@ img {
         }
 
         .letter span {
-            font-size: 70px;
+            font-size: 60px;
 
-      }}
+      }
+    }
