@@ -1,15 +1,3 @@
-// -----------nav & footer-------
-
-$(document).ready(()=>{
-
-    $.get('../navbar & footer/navbar.html',(data)=>{
-        $('#Navbar').html(data)
-        console.log(data)
-    })
-    $.get('../navbar & footer/footer.html',(data)=>{
-        $('#footer').html(data)
-    })
-})
 const products = [
    
  {

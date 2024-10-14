@@ -1,3 +1,5 @@
+
+
 import { titles } from "./data.js";
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -118,3 +120,4 @@ function updateTitle(newIndex, color) {
 updateTitle(0, getComputedStyle(bgOverlay).backgroundColor);
 
 });
+

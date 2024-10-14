@@ -10,11 +10,24 @@
 
     <div id="Navbar"></div>
     <div class="container" id="card-container">
-    <div id="footer"></div>
     </div> <!-- Container for product cards -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+    <div id="footer"></div>
+    
     <script src="script.js"></script> <!-- External JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // -----------nav & footer-------
+
+$(document).ready(()=>{
+
+$.get('.../navbar.html',(data)=>{
+    $('#Navbar').html(data)
+})
+$.get('.../footer.html',(data)=>{
+    $('#footer').html(data)
+})
+})
+    </script>
 </body>
 </html>
 
