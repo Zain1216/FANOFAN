@@ -1,11 +1,14 @@
-// -------------Logo--------------
+// -----------nav & footer-------
 
-gsap.to("#logo",{
-    delay: 0.6,
-     rotate : 200000,
-    duration: 1000,
-        // delay: 2
+$(document).ready(()=>{
+
+    $.get('navbar.html',(data)=>{
+        $('#Navbar').html(data)
     })
+    $.get('footer.html',(data)=>{
+        $('#footer').html(data)
+    })
+})
 
 // --------------------headerbanner----------------------
     
