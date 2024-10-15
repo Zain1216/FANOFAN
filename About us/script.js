@@ -1,3 +1,15 @@
+// -----------nav & footer-------
+
+$(document).ready(()=>{
+
+  $.get('../navbar.html',(data)=>{
+      $('#Navbar').html(data)
+  })
+  $.get('../footer.html',(data)=>{
+      $('#footer').html(data)
+  })
+})
+
 gsap.matchMedia().add("(min-width: 768px)", () => {
   // Create a GSAP timeline with ScrollTrigger attached to it
   let timeline = gsap.timeline({
