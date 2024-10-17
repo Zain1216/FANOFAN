@@ -60,13 +60,13 @@ function updateTitle(newIndex, color) {
 
     for (let i = 0; i < numberOfItems; i++) {
         const navItemWrapper = document.createElement("div");
-        navItemWrapper.classList.add("nav-item-wrapper");
+        navItemWrapper.classList.add("nav-item1-wrapper");
         if (i === 0) {
         navItemWrapper.classList.add("active");
         }
         
         const navItem = document.createElement("div");
-        navItem.classList.add("nav-item");
+        navItem.classList.add("nav-item1");
         
         navItemWrapper.appendChild(navItem);   
         sliderNav.appendChild(navItemWrapper);
@@ -76,7 +76,7 @@ function updateTitle(newIndex, color) {
                 return;
             }
 
-            document.querySelectorAll(".nav-item-wrapper")
+            document.querySelectorAll(".nav-item1-wrapper")
             .forEach((nav) => nav.classList.remove("active"));
             navItemWrapper.classList.add("active");
 
