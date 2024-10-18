@@ -87,7 +87,7 @@ $(document).ready(function () {
             sizes: ["S(24-30 in)", "M(36-42 in)", "L(52-60 in)"],
             features: ["Lighting", "Remote control", "Energy efficiency"],
             weight: "10 to 25 lb",
-            cardLink: "  "
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/CEILING%20FAN/index.html"
         },
         {
             title: "Table Fan",
@@ -97,7 +97,7 @@ $(document).ready(function () {
             sizes: ["Small", "Medium"],
             features: ["Oscillating", "Quiet operation"],
             weight: "5 to 10 lb",
-            cardLink: "  "
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/TABLE%20FAN/index.html"
         },
         {
             title: "Stand Fan",
@@ -107,7 +107,7 @@ $(document).ready(function () {
             sizes: ["Adjustable<br>height"],
             features: ["Remote control", "3 speed settings"],
             weight: "7 to 12 lb",
-            cardLink: "  "
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/STAND%20FAN/index.html"
         },
         {
             title: "Exhaust Fan",
@@ -117,7 +117,7 @@ $(document).ready(function () {
             sizes: ["Standard", "Large"],
             features: ["High airflow", "Energy efficient"],
             weight: "8 to 15 lb",
-            cardLink: "  "
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/EXHAUST%20fAN/index.html"
         }
     ];
 
@@ -129,8 +129,8 @@ $(document).ready(function () {
                 <div class="bottom">
                     <div class="left">
                         <div class="details">
-                            <h1 class="card1">${card.title}</h1>
-                        <p class="card2">${card.description}</p>
+                            <h1 class="cardtxt">${card.title}</h1>
+                        <p class="cardp">${card.description}</p>
                         </div>
                         <div class="buy"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
@@ -138,9 +138,9 @@ $(document).ready(function () {
                         <div class="done"><i class="fa-solid fa-check" style="color: black;"></i></div>
                         <div class="details">
 
-                            <a href="${card.cardLink}">
-                                <h2>Discover more</h2>
-                                <p>${card.title} →</p>
+                            <a class="cardbutton" href="${card.cardLink}">
+                                <h2 class="cardlik cardbutton1">Discover more</h2>
+                                <p class="cardpara">${card.title} →</p>
                             </a>
 
                         </div>
@@ -151,19 +151,19 @@ $(document).ready(function () {
             <div class="inside">
                 <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
                 <div class="contents">
-                    <ul class="ul1">
+                    <ul>
                         <h4>Colors</h4>
                         ${card.colors.map(color => `<li>${color}</li>`).join('')}
                     </ul>
-                    <ul class="ul1">
+                    <ul>
                         <h4>Size</h4>
                         ${card.sizes.map(size => `<li>${size}</li>`).join('')}
                     </ul>
-                    <ul class="ul1">
+                    <ul>
                         <h4>Features</h4>
                         ${card.features.map(feature => `<li>${feature}</li>`).join('')}
                     </ul>
-                    <ul class="ul1">
+                    <ul>
                         <h4>Weight</h4>
                         <li>${card.weight}</li>
                     </ul>

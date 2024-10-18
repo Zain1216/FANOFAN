@@ -694,7 +694,7 @@ video {
 /* ---------card---------- */
 html, body{
     /* background: #E3E3D8; */
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
     /* padding: 25px; */
     
   }
@@ -706,6 +706,7 @@ html, body{
 }
 
 @media screen and (max-width: 1000px) {
+    
     .cards-container {
    display: flex;
    justify-content: center;
@@ -753,7 +754,7 @@ html, body{
         }
         .left{
           height:100%;
-          width: 110%;
+          width: 50%;
           position:relative;
           float:left;
           color: white;
@@ -834,7 +835,7 @@ html, body{
         }
         &:hover{
             .remove, .done{
-                transform: translateY(-100%);
+                transform: translateY(-132%);
             }
           }
         }
@@ -861,9 +862,9 @@ html, body{
         opacity: 1;
       }
       &:hover{
-        width:100%;
-        right:0;
-        top:0;
+          width:100%;
+          right:0;
+          top:0;
         border-radius: 0;
         height:80%;
         opacity: 0.8;
@@ -873,7 +874,7 @@ html, body{
           top:15px;
         }
         .contents{
-            margin-top: 60px;
+            margin-top: 40px;
           opacity: 1;
           transform: scale(1);
           transform: translateY(0);
@@ -887,7 +888,7 @@ html, body{
         transform: translateY(-200%);
         transition: opacity 0.2s, transform 0.8s;
       }
-        .ul1{
+        ul{
           text-align:left;
           width:100%;
           color: #212121;
@@ -895,15 +896,25 @@ html, body{
         h1,h2{
           color: white;
         }
-    }
-    h1 {
+      }
+      h1{
         font-size: 25px;
       }
+  }
 
-      .card1{
-        color: white;
-      }
-      .card2{
-        color: white;
-      }
+  .cardtxt{
+    color: white;
+    width: 500px;
+
+  }
+  .cardp{
+    color: white;
+    width: 500px;
+  }
+
+
+
+.cardbutton1{
+    font-size: 25px;
+
   }
