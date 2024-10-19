@@ -87,7 +87,7 @@ $(document).ready(function () {
             sizes: ["S(24-30 in)", "M(36-42 in)", "L(52-60 in)"],
             features: ["Lighting", "Remote control", "Energy efficiency"],
             weight: "10 to 25 lb",
-            cardLink: "https://zain1216.github.io/FANOFAN/Product/CEILING%20FAN/index.html"
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/CEILING%20FAN/ceiling-fan.html"
         },
         {
             title: "Table Fan",
@@ -97,7 +97,7 @@ $(document).ready(function () {
             sizes: ["Small", "Medium"],
             features: ["Oscillating", "Quiet operation"],
             weight: "5 to 10 lb",
-            cardLink: "https://zain1216.github.io/FANOFAN/Product/TABLE%20FAN/index.html"
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/STAND%20FAN/table-fan.html"
         },
         {
             title: "Stand Fan",
@@ -107,7 +107,7 @@ $(document).ready(function () {
             sizes: ["Adjustable<br>height"],
             features: ["Remote control", "3 speed settings"],
             weight: "7 to 12 lb",
-            cardLink: "https://zain1216.github.io/FANOFAN/Product/STAND%20FAN/index.html"
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/TABLE%20FAN/stand-fan.html"
         },
         {
             title: "Exhaust Fan",
@@ -117,7 +117,7 @@ $(document).ready(function () {
             sizes: ["Standard", "Large"],
             features: ["High airflow", "Energy efficient"],
             weight: "8 to 15 lb",
-            cardLink: "https://zain1216.github.io/FANOFAN/Product/EXHAUST%20fAN/index.html"
+            cardLink: "https://zain1216.github.io/FANOFAN/Product/EXHAUST%20fAN/exhaust-fan.html"
         }
     ];
 
