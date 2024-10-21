@@ -141,6 +141,8 @@ a:hover{
 /* carousel */
 
 .carousel{
+    margin-bottom: 50px !important;
+
     margin-top: 0px !important;
     width: 100vw;
     height: 100vh;
@@ -315,7 +317,7 @@ a:hover{
 .arrows{
     position: absolute;
     top: 80%;
-    right: 52%;
+    right: 32%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
@@ -599,98 +601,14 @@ a:hover{
 
 
 
-/* ------------video----------------- */
 
-body {
-    font-family: 'Roboto', sans-serif; /* Using the selected font */
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Light background */
-}
-
-/* Use a flexbox on the grid container */
-.grid {
-    display: flex;
-    justify-content: space-between; /* Space between video and text */
-    align-items: center; /* Vertically align text to the video */
-    height: 100vh; /* Full viewport height */
-    gap: 20px; /* Space between video and text */
-}
-
-.video {
-    flex: 1; /* Video will take up equal space */
-    border-radius: 8px;
-    overflow: hidden;
-    margin-left: 13px;
-}
-
-video {
-    width: 100%; /* Make video fill the available space */
-    height: 100%; /* Make video take full height */
-    object-fit: cover; /* Make sure video scales properly without distortion */
-    border-radius: 8px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.text {
-    flex: 1; /* Text will take up equal space */
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: center; /* Vertically align content */
-    align-items: flex-start; /* Align items to the left */
-}
-
-/* h2 styling */
-.text h2 {
-    font-size: 28px;
-    color: #1577d3;
-    margin-bottom: 10px; /* Space between heading and paragraph */
-    transition: color 0.1s;
-}
-
-/* Paragraph styling */
-.text p {
-    margin-bottom: 15px;
-    font-size: 17px;
-    color: #332e2e;
-    line-height: 1.5;
-}
-
-/* Button styling */
-.button {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.2s;
-}
-
-.button:hover {
-    background-color: #fefefe00;
-    transform: scale(1.1);
-    color: chocolate;
-    border: 1px solid chocolate;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .grid {
-        flex-direction: column; /* Stack video and text vertically on smaller screens */
-        height: auto; /* Allow height to adjust based on content */
-    }
-
-    .video {
-        height: 300px; /* Adjust video height for small screens */
-    }
-}
 
 /* ---------card---------- */
+
+.features{
+    margin-bottom: 50px !important;
+
+}
 .cards-container, .cards-container * {
     box-sizing: initial !important;
 }
@@ -801,6 +719,7 @@ video {
             width: calc(70% - 40px);
           }
   
+        
           .card-link {
             text-decoration: none;
             color: white !important;
@@ -896,6 +815,9 @@ video {
         }
   
         .card-contents {
+            font-weight: 10 !important;
+            margin-top: 50px !important;
+            font-size: small;
           opacity: 1 !important;
           transform: scale(1) !important;
           transform: translateY(0) !important;
@@ -925,6 +847,7 @@ video {
       }
     }
   
+    
     #card-title {
       font-size: 25px !important;
       color: white !important;
@@ -936,12 +859,16 @@ video {
 
   }
 
-  #page3{
-  
+  .page3{
+    margin-bottom: 50px !important;
     color: white;
     font-family: myFirstFont;
     margin: 0;
     color: var(--color2black);
     padding: 0;
 
+  }
+
+  .h2, h2 {
+    font-size: 100% !important;
   }
