@@ -153,11 +153,11 @@ detailsBtn.forEach(button => {
 });
 
 
-const modalContainer = document.querySelector('.container-description');
-const modal = document.querySelector('.container');
+const modalContainer = document.querySelector('.container-description1');
+const modal = document.querySelector('.container1');
 const modalImage = document.querySelector('.product-img img');
-const modalTitle = document.querySelector('.description-part h2');
-const modalPrice = document.querySelector('.description-part .price');
+const modalTitle = document.querySelector('.description-part1 h2');
+const modalPrice = document.querySelector('.description-part1 .price');
 const modalDescription = document.querySelector('.img-description');
 const modalRatings = document.querySelector('.ratings-count');
 const crossIcon = document.getElementById('cross-icon');
