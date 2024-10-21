@@ -23,6 +23,9 @@ body {
     overflow-x: hidden;
 }
 
+button{
+    font-family: myFirstFont;
+}
 
 
 /* Dropdown menu visibility on hover */
