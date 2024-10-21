@@ -218,7 +218,7 @@ body {
 
 /* Modal Content Styles */
 .container1 {
-    width: 150%;
+    width: 150% !important;
     height: 100%;
     display: flex;
     justify-content: center;

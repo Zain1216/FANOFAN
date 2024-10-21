@@ -14,6 +14,7 @@ body {
     text-align: center;
     background: url('https://www.yaxinfan.com/678/image_1632703020_01.webp') no-repeat center center;
     background-size: cover;
+    color: white;
     margin-top: 0;
 }
 
@@ -214,8 +215,8 @@ body {
 }
 
 /* Modal Content Styles */
-.container {
-    width: 100%;
+.container1 {
+    width: 150% !important;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -243,14 +244,14 @@ body {
     cursor: pointer;
 }
 .description-part h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
-.description-part .text{
-    font-size: 0.858rem;
-    margin-top: -1.3rem;
-    color: gray;
+.description-part1 .text{
+    font-size: 0.858rem !important;
+    margin-top: -0rem !important;
+    color: gray !important;
 }
-.description-part .img-description {
+.description-part1 .img-description {
     font-size: 1.14rem;
 }
 
@@ -260,37 +261,40 @@ body {
     flex-wrap: wrap;
 }
 .buy-buttons button {
-    padding: 0.6rem 0.8rem;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.6rem 0.8rem !important;
+    margin-top: 0.8remc !important;
+    font-size: 1rem !important;
+    border-radius: 0.6rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 .buy-buttons .btn i {
     margin-right: 0.5rem;
 }
 #buy-btn {
-    background-color: white;
-    color: black;
+    background-color: white !important;
+    color: black !important;
 }
 #buy-btn:hover {
-    background-color: #e3e2e2;
-    color: black;
+    background-color: #e3e2e2 !important;
+    color: black !important;
+}
+#cart-btn{
+    color: white !important;
 }
 #cart-btn {
-    background-color: #212121;
+    background-color: #212121 !important;
     border: none;
-    color: white;
+    color: white !important;
 }
 #cart-btn:hover {
     background-color: #464646;
-    color: white;
+    color: white !important;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 835px) {
-    .container {
+    .container1 {
         height: 100%;
         width: 100%;
         padding: 0 1rem;
