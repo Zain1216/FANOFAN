@@ -22,7 +22,8 @@ body {
     overflow-x: hidden;
 }
 
-
+/* .row{
+     color: rgba(151, 151, 151, 0) !important} */
     .PAGE0{
         font-size: larger;
         margin-top: 100px;
@@ -79,12 +80,7 @@ body {
 
 /* ------------video----------------- */
 
-body {
-    font-family: 'Roboto', sans-serif; /* Using the selected font */
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Light background */
-}
+.videopage{margin-top: 100px;}
 
 /* Use a flexbox on the grid container */
 .grid {
@@ -131,7 +127,7 @@ video {
 /* h2 styling */
 .text h2 {
     font-size: 28px;
-    color: #1577d3;
+    color: var(--color2black);
     margin-bottom: 10px; /* Space between heading and paragraph */
     transition: color 0.1s;
 }
@@ -151,13 +147,15 @@ video {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    color: var(--color2black);
-    background-color: #ffffff4f;
+    color: var(--color1white);
+    background-color: var(--color2black);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.2s;
 }
+
+
 
 .button:hover {
     background-color: #fefefe00;
