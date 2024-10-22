@@ -14,7 +14,6 @@ body {
     text-align: center;
     background: url('https://www.yaxinfan.com/678/image_1632703020_01.webp') no-repeat center center;
     background-size: cover;
-    color: white;
     margin-top: 0;
 }
 
@@ -92,8 +91,8 @@ body {
     }
 }
 
-/* Container for product cards */
-#card-container {
+/* container1 for product cards */
+#card-container1 {
     display: flex;
     gap: 1.8rem;
     margin: 0 2.5rem 2rem 2.5rem;
@@ -103,7 +102,7 @@ body {
 }
 
 /* code for card-heading  */
-.heading-container {
+.heading-container1 {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -135,11 +134,11 @@ body {
     transform: scale(1.02);
 }
 
-/* Image Container */
-.image-container {
+/* Image container1 */
+.image-container1 {
     position: relative;
 }
-.image-container img {
+.image-container1 img {
     width: 100%;
     height: 180px;
     border-radius: 15px;
@@ -147,15 +146,39 @@ body {
 
 /* Favorite Star */
 .favorite-star {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 18px;
-    color: #000;
-    cursor: pointer;
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    font-size: 18px !important;
+    color: #000 !important;
+    cursor: pointer !important;
 }
 .favorite-star.active {
-    color: red;
+    color: red !important;
+}
+
+
+/* Code to show favorite star message popup */
+#toast-container1 {
+    position: fixed;
+    top: 5%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.toast.show {
+    opacity: 1;
 }
 
 /* Product Info */
@@ -198,7 +221,7 @@ body {
 
 /* Modal popup Styles */
 
-.container-description {
+.container1-description {
     display: none; 
     position: fixed;
     top: 0;
@@ -210,13 +233,13 @@ body {
     z-index: 9999; 
     overflow: hidden;
 }
-.container-description.active {
+.container1-description.active {
     display: flex; 
 }
 
 /* Modal Content Styles */
 .container1 {
-    width: 150% !important;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -244,52 +267,53 @@ body {
     cursor: pointer;
 }
 .description-part h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
-.description-part1 .text{
-    font-size: 0.858rem !important;
-    margin-top: -0rem !important;
-    color: gray !important;
+.description-part .text{
+    font-size: 0.858rem;
+    /* margin-top: -1.3rem; */
+    color: gray;
 }
-.description-part1 .img-description {
+.description-part .img-description {
     font-size: 1.14rem;
 }
 
-.buy-buttons {
+.buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
-.buy-buttons button {
-    padding: 0.6rem 0.8rem !important;
-    margin-top: 0.8remc !important;
-    font-size: 1rem !important;
-    border-radius: 0.6rem !important;
-    cursor: pointer !important;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
+.buttons .btn {
+    padding: 0.6rem 0.8rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-.buy-buttons .btn i {
+.buttons .btn i {
     margin-right: 0.5rem;
 }
-#buy-btn {
-    background-color: white !important;
-    color: black !important;
+#download-btn {
+    background-color: white;
+    color: black;
 }
-#buy-btn:hover {
-    background-color: #e3e2e2 !important;
-    color: black !important;
+#download-btn a{
+    text-decoration: none;
+    color: black;
 }
-#cart-btn{
-    color: white !important;
+#download-btn:hover {
+    background-color: #e3e2e2;
+    color: black;
 }
 #cart-btn {
-    background-color: #212121 !important;
+    background-color: #212121;
     border: none;
-    color: white !important;
+    color: white;
 }
 #cart-btn:hover {
     background-color: #464646;
-    color: white !important;
+    color: white;
 }
 
 /* Responsive Styles */

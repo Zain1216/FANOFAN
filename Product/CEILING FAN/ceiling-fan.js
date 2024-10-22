@@ -103,16 +103,16 @@ const products = [
     },
 ];
 
-const cardContainer = document.getElementById('card-container');
+const cardcontainer1 = document.getElementById('card-container1');
 products.forEach((products, index) => {
-    cardContainer.innerHTML += `
+    cardcontainer1.innerHTML += `
       
-            <div class="product-card">
-                <div class="image-container">
+            <div class="product-card1">
+                <div class="image-container1">
                     <img src="${products.image}">
                     <span class="favorite-star">❤</span>
                 </div>
-                <div class="product-info">
+                <div class="product-info1">
                     <h2>${products.title}</h2>
                     <p>${products.description}</p>
                     <div class="price-order">
@@ -125,23 +125,34 @@ products.forEach((products, index) => {
 
 });
 
-// click event for favorite star
+// click event for favorite-card 
+function showToast(message) {
+    const toast = document.getElementById('sample-toast');
+    toast.textContent = message;
+    toast.classList.add('show');
 
-let favoriteStar = document.querySelectorAll('.favorite-star')
-let customerCLicks = true
-favoriteStar.forEach(star => {
-    star.addEventListener('click', function () {
-        this.classList.toggle('active');
-        if (customerCLicks) {
-            alert("Added to your favorites! ❤️")
-            customerCLicks = false
-        } else {
-            alert("Removed from favorites. 💔")
-            customerCLicks = true        }
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000); 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let favoriteStar = document.querySelectorAll('.favorite-star');
+    favoriteStar.forEach(star => {
+        star.addEventListener('click', function () {
+            this.classList.toggle('active');
+            if (this.classList.contains('active')) {
+                showToast("Added to your favorites! ❤️");
+            } else {
+                showToast("Removed from favorites. 💔");
+            }
+        });
     });
 });
 
-// click event to open modal popup 
+
+
+// click event to open modal popup of card-desvription
 
 let detailsBtn = document.querySelectorAll('.details')
 
@@ -153,11 +164,11 @@ detailsBtn.forEach(button => {
 });
 
 
-const modalContainer = document.querySelector('.container-description1');
+const modalcontainer1 = document.querySelector('.container1-description');
 const modal = document.querySelector('.container1');
 const modalImage = document.querySelector('.product-img img');
-const modalTitle = document.querySelector('.description-part1 h2');
-const modalPrice = document.querySelector('.description-part1 .price');
+const modalTitle = document.querySelector('.description-part h2');
+const modalPrice = document.querySelector('.description-part .price');
 const modalDescription = document.querySelector('.img-description');
 const modalRatings = document.querySelector('.ratings-count');
 const crossIcon = document.getElementById('cross-icon');
@@ -169,30 +180,20 @@ function openModal(product) {
     modalPrice.textContent = product.price;
     modalDescription.textContent = product.description;
     modalRatings.textContent = product.ratings;
-    modalContainer.classList.add('active');
+    modalcontainer1.classList.add('active');
 }
 
 // click event for addd-to-cart-button
 let cartBtn = document.querySelector('#cart-btn')
-
 cartBtn.addEventListener('click',() => {
     alert("Got it! Your item has been added to the cart 🛒")
 })
 
-// click event for buy-now-button
-
-let buyBtn = document.querySelector('#buy-btn')
-buyBtn.addEventListener('click',() => {
-    alert("Great choice! Get ready for your new item🎉")
-})
-
-
 // Close modal function
 function closeModal() {
-    modalContainer.classList.remove('active');
+    modalcontainer1.classList.remove('active');
 }
 
 // Cross icon click event
 crossIcon.addEventListener('click', closeModal);
-
 
