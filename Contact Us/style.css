@@ -66,7 +66,7 @@ body {
 .contact-right {
     flex-basis: 40%;
     padding: 40px;
-    background: hsl(212, 54%, 51%);
+    background: hsl(210, 1%, 28%);
     color: rgba(255, 255, 255, 0.886);
 }
 .social-links {
@@ -90,6 +90,8 @@ h1 {
 .container p {
     margin-bottom: 40px;
 }
+
+
 
 .input-row {
     display: flex;
@@ -128,15 +130,17 @@ form button {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    background-color: hsl(212, 66%, 53%);
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
+    background-color: black !important;
+    color: white !important;
+    
     transition: background-color 0.4s ease, transform 0.5s ease;
 }
 
 form button:hover {
-    background-color: hsl(212, 39%, 40%);
+    background-color: black !important;
     transform: scale(1.1);
 }
 
@@ -186,7 +190,7 @@ tr td {
 }
 
 .privacy-statement a {
-    color: #007bff;
+    color: hsl(210, 1%, 28%);
     text-decoration: none;
 }
 
@@ -267,6 +271,9 @@ tr td {
 
     .faq-answer {
         padding: 10px;
+    }
+    .container p {
+        margin-top: 10%;
     }
 }
 

@@ -32,34 +32,39 @@
                 <form id="contactForm">
                     <div class="input-row">
                         <div class="input-group">
-                            <input id="inputName" type="text" placeholder="Enter your name" required>
+                            <input id="inputName" type="text" placeholder="Enter your name" >
                             <p style="color: rgb(243, 13, 13);" id="Name-error"></p>
-
+                            <p style="color: rgb(243, 13, 13);" id="RequiredNameError"></p>
+                            
                         </div>
                         <div class="input-group">
-                            <input id="inputPhone" type="text" placeholder="Enter your phone" required>
-                        <p style="color: rgb(243, 13, 13);" id="Phone-error"></p>
+                            <input id="inputPhone" type="text" placeholder="Enter your phone" >
+                            <p style="color: rgb(243, 13, 13);" id="Phone-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredPhoneError"></p>
                         </div>
                     </div>
                     <div class="input-row">
                         <div class="input-group">
-                            <input id="inputEmail" type="email" placeholder="Enter your email" required>
+                            <input id="inputEmail" type="email" placeholder="Enter your email" >
                             <p style="color: rgb(243, 13, 13);" id="Email-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredEmailError"></p>
                         </div>
                         <div class="input-group">
                             <input id="inputText" type="text" placeholder="Enter your subject">
                             <p style="color: rgb(243, 13, 13);" id="subject-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredSubjectError"></p>
                         </div>
                     </div>
                     <label>Message</label>
-                    <textarea rows="5" placeholder="Enter your message"></textarea>
+                    <textarea rows="5" placeholder="Enter your message" id="inputMessage"></textarea>
+                    <p style="color: rgb(243, 13, 13);" id="RequiredMessageError"></p>
                     <button class="btn" id="btn" type="submit">Send</button>
                 </form>
                 <div class="privacy-statement">
                     <h3>Privacy Statement</h3>
                     <p>
                         Your privacy is important to us.
-                     For more information, please read our <a href="#">Privacy Policy</a>.
+                     For more information, please read our <a href="Document.pdf">Privacy Policy</a>.
                     </p>
                 </div>
                 
