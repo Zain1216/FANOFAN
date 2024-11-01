@@ -68,8 +68,12 @@ body {
 
 /* Make the navbar look better on small screens */
 @media (max-width: 768px) {
-    
-
+    .loader-txt{
+        font-size: 70px !important;
+      }
+    .loader{
+        margin-top: 70px !important;
+      }
     #buttons {
         display: flex;
         flex-direction: column;
@@ -893,3 +897,43 @@ a:hover{
   .h2, h2 {
     font-size: 100% !important;
   }
+
+  .loader-txt{
+    font-size: 150px;
+    position: inherit;
+    font-weight: 800;
+
+  }
+
+  .loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ada8a8;
+    position: absolute;
+    z-index: 10000;
+}
+.loader{
+    margin-top: 140px;
+    align-items: bottom;
+        position: inherit;
+        /* z-index: 1000; */
+        width: 10%;
+        height: 4px;
+        background-color: rgb(71, 68, 68);
+        /* left: 0; */
+        /* top: 0; */
+        animation: runningTime 7s linear 1 forwards;
+    
+}
+
+/* @keyframes load{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+        
+    }
+} */

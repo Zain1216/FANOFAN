@@ -10,7 +10,9 @@ $(document).ready(()=>{
     })
    
 })
-
+$(window).on('load', () => {
+    $('.loader-container').fadeOut(5000)
+  })
 // --------------------headerbanner----------------------
     
 
