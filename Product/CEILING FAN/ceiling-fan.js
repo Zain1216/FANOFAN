@@ -181,6 +181,7 @@ function openModal(product) {
     modalDescription.textContent = product.description;
     modalRatings.textContent = product.ratings;
     modalcontainer1.classList.add('active');
+    document.body.classList.add('blur-background')
 }
 
 // click event for addd-to-cart-button
@@ -192,6 +193,8 @@ cartBtn.addEventListener('click',() => {
 // Close modal function
 function closeModal() {
     modalcontainer1.classList.remove('active');
+    document.body.classList.add('blur-background')
+
 }
 
 // Cross icon click event
