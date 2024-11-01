@@ -219,6 +219,17 @@ body {
 
 
 /* Code for modal-description-popup */
+body.blur-background::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 9998;
+}
 .container1-description {
     display: none; 
     position: fixed;
@@ -237,8 +248,8 @@ body {
 
 /* Modal Content Styles */
 .container1 {
-    width: 150% !important;
-    height: 100%;
+    width: 75vw;
+    height: 450;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +260,7 @@ body {
 
 .product-img img {
     max-width: 100%;
-    height: 400px;
+    height: 450px;
     display: block;
     margin: 0  ;
 }
