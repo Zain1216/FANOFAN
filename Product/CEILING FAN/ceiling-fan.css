@@ -249,7 +249,7 @@ body.blur-background::before{
 /* Modal Content Styles */
 .container1 {
     width: 75vw;
-    height: 450;
+    height: 450px ;
     display: flex;
     justify-content: center;
     align-items: center;

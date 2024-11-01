@@ -119,7 +119,7 @@ $(document).ready(function () {
             sizes: ["Standard", "Large"],
             features: ["High airflow", "Energy efficient"],
             weight: "8 to 15 lb",
-            cardLink: "Product/EXHAUST FAN/exhaust-fan.html  "
+            cardLink: "Product/EXHAUST FAN/exhaust-fan.htmlhttps://zain1216.github.io/FANOFAN/Product/EXHAUST%20fAN/exhaust-fan.html  "
         }
     ];
 
